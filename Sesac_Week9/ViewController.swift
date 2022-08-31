@@ -12,23 +12,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    var list: Person?
+    private var viewModel = PersonViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        LottoAPIManager.requestLotto(drwNo: 1000) { lotto, error in
-            guard let lotto = lotto else {
-                return
-            }
-            self.resultLabel.text = lotto.drwNoDate
-        }
+        viewModel.fetchPerson(query: "kim")
         
-        PersonAPIManager.requestPerson(query: "kim") { person, error in
-            guard let person = person else {
-                return
-            }
-            self.list = person
+        viewModel.list.bind { person in //여기 클로저구문이 리스너에 들어가있음. bind를 실행해야 리스너에 들어감
+            print("viewcontroller bind")
             self.tableView.reloadData()
         }
     }
@@ -37,14 +29,16 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list == nil ? 0 : list!.results.count
+        return viewModel.numberOfRowsInSection
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = list?.results[indexPath.row].name
-        cell.detailTextLabel?.text = list?.results[indexPath.row].knownForDepartment
+        let data = viewModel.cellForRowAt(at: indexPath)
+        
+        cell.textLabel?.text = data.name
+        cell.detailTextLabel?.text = data.knownForDepartment
         
         return cell
     }

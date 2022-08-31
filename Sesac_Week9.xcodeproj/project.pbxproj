@@ -18,6 +18,8 @@
 		973BF9BE28BDA73F0090A5CA /* PersonAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973BF9BD28BDA73F0090A5CA /* PersonAPIManager.swift */; };
 		973BF9C028BDA85A0090A5CA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973BF9BF28BDA85A0090A5CA /* Person.swift */; };
 		973BF9C228BDB75B0090A5CA /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973BF9C128BDB75B0090A5CA /* URLSession+Extension.swift */; };
+		97AC152328BEF8D3007089FD /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AC152228BEF8D3007089FD /* Observable.swift */; };
+		97AC152528BEFC25007089FD /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AC152428BEFC25007089FD /* PersonViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		973BF9BD28BDA73F0090A5CA /* PersonAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAPIManager.swift; sourceTree = "<group>"; };
 		973BF9BF28BDA85A0090A5CA /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		973BF9C128BDB75B0090A5CA /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		97AC152228BEF8D3007089FD /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		97AC152428BEFC25007089FD /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 				973BF9AE28BD94D30090A5CA /* LaunchScreen.storyboard */,
 				973BF9B128BD94D30090A5CA /* Info.plist */,
 				973BF9C128BDB75B0090A5CA /* URLSession+Extension.swift */,
+				97AC152228BEF8D3007089FD /* Observable.swift */,
 			);
 			path = Sesac_Week9;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			children = (
 				973BF9BD28BDA73F0090A5CA /* PersonAPIManager.swift */,
 				973BF9BF28BDA85A0090A5CA /* Person.swift */,
+				97AC152428BEFC25007089FD /* PersonViewModel.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -170,9 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				973BF9A828BD94D10090A5CA /* ViewController.swift in Sources */,
+				97AC152528BEFC25007089FD /* PersonViewModel.swift in Sources */,
 				973BF9BB28BD9BBA0090A5CA /* Lotto.swift in Sources */,
 				973BF9A428BD94D10090A5CA /* AppDelegate.swift in Sources */,
 				973BF9BE28BDA73F0090A5CA /* PersonAPIManager.swift in Sources */,
+				97AC152328BEF8D3007089FD /* Observable.swift in Sources */,
 				973BF9C228BDB75B0090A5CA /* URLSession+Extension.swift in Sources */,
 				973BF9C028BDA85A0090A5CA /* Person.swift in Sources */,
 				973BF9A628BD94D10090A5CA /* SceneDelegate.swift in Sources */,
