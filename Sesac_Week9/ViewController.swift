@@ -16,13 +16,27 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//
+//        let example = User("하이")
+//        example.value = "바보"
+//        example.bind { name in
+//            print("이름이 \(name)로 바뀜")
+//        }
+//
+//        let eaa = User([123,124])
+//        eaa.value = [12,3]
+//        eaa.bind { arr in
+//            print(arr)
+//        }
+//
+//        viewModel.fetchPerson(query: "kim")
+//
+//        viewModel.list.bind { person in //여기 클로저구문이 리스너에 들어가있음. bind를 실행해야 리스너에 들어감
+//            print("person \(person)")
+//            print("viewcontroller bind")
+//            self.tableView.reloadData()
+//        }
 
-        viewModel.fetchPerson(query: "kim")
-        
-        viewModel.list.bind { person in //여기 클로저구문이 리스너에 들어가있음. bind를 실행해야 리스너에 들어감
-            print("viewcontroller bind")
-            self.tableView.reloadData()
-        }
     }
 }
 

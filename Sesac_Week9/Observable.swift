@@ -32,12 +32,3 @@ class Observable<T> {
         listener = closure // 리스너에 업데이트 -> 리로드하는 메서드를 갖게됨
     }
 }
-
-class User {
-    
-    var value: String
-    
-    init(value: String) {
-        self.value = value
-    }
-}

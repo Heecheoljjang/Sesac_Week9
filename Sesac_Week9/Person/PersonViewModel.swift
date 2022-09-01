@@ -16,11 +16,13 @@ class PersonViewModel {
     
     func fetchPerson(query: String) {
         print("fetchPerson")
+        print("처음 리스트", list.value)
         PersonAPIManager.requestPerson(query: "kim") { person, error in
             guard let person = person else {
                 return
             }
             self.list.value = person
+            print("나중 list", self.list.value)
         }
     }
     
