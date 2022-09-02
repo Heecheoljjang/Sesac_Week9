@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		971A67E428C18669004E4B61 /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A67E328C18669004E4B61 /* GCDViewController.swift */; };
 		973BF9A428BD94D10090A5CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973BF9A328BD94D10090A5CA /* AppDelegate.swift */; };
 		973BF9A628BD94D10090A5CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973BF9A528BD94D10090A5CA /* SceneDelegate.swift */; };
 		973BF9A828BD94D10090A5CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973BF9A728BD94D10090A5CA /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		971A67E328C18669004E4B61 /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
 		973BF9A028BD94D10090A5CA /* Sesac_Week9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sesac_Week9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		973BF9A328BD94D10090A5CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		973BF9A528BD94D10090A5CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				973BF9A528BD94D10090A5CA /* SceneDelegate.swift */,
 				973BF9A728BD94D10090A5CA /* ViewController.swift */,
 				973BF9A928BD94D10090A5CA /* Main.storyboard */,
+				971A67E328C18669004E4B61 /* GCDViewController.swift */,
 				973BF9AC28BD94D30090A5CA /* Assets.xcassets */,
 				973BF9AE28BD94D30090A5CA /* LaunchScreen.storyboard */,
 				973BF9B128BD94D30090A5CA /* Info.plist */,
@@ -205,6 +208,7 @@
 				973BF9A628BD94D10090A5CA /* SceneDelegate.swift in Sources */,
 				975E99C128C038040072AC5D /* Sample.swift in Sources */,
 				973BF9B928BD94F00090A5CA /* LottoAPIManager.swift in Sources */,
+				971A67E428C18669004E4B61 /* GCDViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
