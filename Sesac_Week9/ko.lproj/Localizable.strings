@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Sesac_Week9
+
+  Created by HeecheolYoon on 2022/09/06.
+  
+*/
+"navigation_title" = "나의 다이어리";
+
+"search_placeholder" = "영화를 검색하세요";
+
+"main_age_placeholder" = "몇살?";
+
+"common_cancel" = "취소";
+
+"introduce" = "저는 %@입니다";
+
+"number_test" = "저는 %lld살입니다.";

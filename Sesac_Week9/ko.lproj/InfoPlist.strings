@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Sesac_Week9
+
+  Created by HeecheolYoon on 2022/09/06.
+  
+*/
+
+"CFBundleDisplayName" = "내 앱";
+"NSLocationWhenInUseUsageDescription" = "위치";
